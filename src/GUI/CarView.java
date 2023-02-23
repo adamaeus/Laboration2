@@ -52,12 +52,7 @@ public class CarView extends JFrame{
 
     // NYTT
     JButton turnRightButton = new JButton ("Turn left");
-
-
-
-
-
-
+    
     // Constructor
     public CarView(String framename, CarController cc){
         this.vehicleC = cc;
@@ -200,6 +195,8 @@ public class CarView extends JFrame{
             }
         });
 
+
+
         turnLeftButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -232,9 +229,9 @@ public class CarView extends JFrame{
         this.pack();
 
         // Get the computer screen resolution
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        //Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
         // Center the frame
-        this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
+        //this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
         // Make the frame visible
         this.setVisible(true);
         // Make sure the frame exits when "x" is pressed

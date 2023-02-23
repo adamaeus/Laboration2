@@ -53,13 +53,6 @@ public class CarController {
         cc.vehicles.add(new Volvo240());
         cc.vehicles.add(new Saab95());
         cc.vehicles.add(new Scania());
-
-
-
-
-
-
-
     }
 
 
@@ -79,8 +72,6 @@ public class CarController {
                 {
                     brakeAndTurnAround(vehicle);
                 }
-                out.println(vehicle.getMovingSystem().getY());
-                out.println(frame.getDrawPanelYCoordinate());
 
                 vehicle.getMovingSystem().move(vehicle.getCurrentSpeed());
                 int x = (int) Math.round(vehicle.getMovingSystem().getX());
